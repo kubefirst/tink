@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package internal.proto.workflow.v2;
 
-option go_package = "github.com/tinkerbell/tink/internal/proto/workflow/v2;workflow";
+option go_package = "github.com/kubefirst/tink/internal/proto/workflow/v2;workflow";
 
 // WorkflowService is responsible for retrieving workflows to be executed by the agent and
 // publishing events as a workflow executes.

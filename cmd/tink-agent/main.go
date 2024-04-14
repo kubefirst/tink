@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/tinkerbell/tink/internal/cli"
+	"github.com/kubefirst/tink/internal/cli"
 )
 
 func main() {

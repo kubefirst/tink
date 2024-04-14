@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/tinkerbell/tink/internal/agent/event"
-	"github.com/tinkerbell/tink/internal/agent/failure"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
+	"github.com/kubefirst/tink/internal/agent/event"
+	"github.com/kubefirst/tink/internal/agent/failure"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 )
 
 // ReasonRuntimeError is the default reason used when no reason is provided by the runtime.

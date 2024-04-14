@@ -3,7 +3,7 @@ package agent
 import (
 	"context"
 
-	"github.com/tinkerbell/tink/internal/agent/transport"
+	"github.com/kubefirst/tink/internal/agent/transport"
 )
 
 // Transport is a transport mechanism for communicating workflows to the agent.

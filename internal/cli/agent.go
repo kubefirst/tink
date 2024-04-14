@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/go-logr/zapr"
+	"github.com/kubefirst/tink/internal/agent"
+	"github.com/kubefirst/tink/internal/agent/runtime"
+	"github.com/kubefirst/tink/internal/agent/transport"
+	"github.com/kubefirst/tink/internal/proto/workflow/v2"
 	"github.com/spf13/cobra"
-	"github.com/tinkerbell/tink/internal/agent"
-	"github.com/tinkerbell/tink/internal/agent/runtime"
-	"github.com/tinkerbell/tink/internal/agent/transport"
-	"github.com/tinkerbell/tink/internal/proto/workflow/v2"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )

@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tinkerbell/tink/api/v1alpha1"
-	"github.com/tinkerbell/tink/internal/proto"
-	"github.com/tinkerbell/tink/internal/testtime"
+	"github.com/kubefirst/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/internal/proto"
+	"github.com/kubefirst/tink/internal/testtime"
 	"google.golang.org/protobuf/testing/protocmp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

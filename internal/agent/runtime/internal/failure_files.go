@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tinkerbell/tink/internal/agent/failure"
+	"github.com/kubefirst/tink/internal/agent/failure"
 )
 
 // NewFailureFiles creates a new FailureFiles instance with isolated underlying files. Consumers

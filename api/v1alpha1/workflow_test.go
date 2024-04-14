@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tinkerbell/tink/internal/testtime"
+	"github.com/kubefirst/tink/internal/testtime"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

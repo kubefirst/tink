@@ -3,7 +3,7 @@ package worker
 import (
 	"context"
 
-	"github.com/tinkerbell/tink/cmd/tink-worker/worker"
+	"github.com/kubefirst/tink/cmd/tink-worker/worker"
 )
 
 type emptyLogger struct{}

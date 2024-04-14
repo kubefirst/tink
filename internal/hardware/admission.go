@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/tinkerbell/tink/api/v1alpha2"
-	"github.com/tinkerbell/tink/internal/hardware/internal"
+	"github.com/kubefirst/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/internal/hardware/internal"
 	ctrl "sigs.k8s.io/controller-runtime"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/webhook"

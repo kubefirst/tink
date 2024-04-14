@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/tinkerbell/tink/cmd/tink-worker/worker"
-	"github.com/tinkerbell/tink/internal/proto"
+	"github.com/kubefirst/tink/cmd/tink-worker/worker"
+	"github.com/kubefirst/tink/internal/proto"
 )
 
 func getRandHexStr(r *rand.Rand, length int) string {

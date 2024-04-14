@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/tinkerbell/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/api/v1alpha2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

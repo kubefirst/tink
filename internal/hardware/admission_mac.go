@@ -7,8 +7,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/tinkerbell/tink/api/v1alpha2"
-	"github.com/tinkerbell/tink/internal/hardware/internal"
+	"github.com/kubefirst/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/internal/hardware/internal"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 )

@@ -3,8 +3,8 @@ package transport
 import (
 	"context"
 
-	"github.com/tinkerbell/tink/internal/agent/event"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
+	"github.com/kubefirst/tink/internal/agent/event"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 )
 
 // WorkflowHandler is responsible for workflow execution.

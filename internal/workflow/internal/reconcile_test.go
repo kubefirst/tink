@@ -7,10 +7,10 @@ import (
 
 	"github.com/go-logr/zerologr"
 	"github.com/google/go-cmp/cmp"
+	tinkv1 "github.com/kubefirst/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/internal/ptr"
+	. "github.com/kubefirst/tink/internal/workflow/internal"
 	"github.com/rs/zerolog"
-	tinkv1 "github.com/tinkerbell/tink/api/v1alpha2"
-	"github.com/tinkerbell/tink/internal/ptr"
-	. "github.com/tinkerbell/tink/internal/workflow/internal"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/tinkerbell/tink/api/v1alpha1"
-	"github.com/tinkerbell/tink/internal/proto"
+	"github.com/kubefirst/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/internal/proto"
 )
 
 func ToWorkflowContext(wf *v1alpha1.Workflow) *proto.WorkflowContext {

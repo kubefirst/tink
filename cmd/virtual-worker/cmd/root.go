@@ -6,14 +6,14 @@ import (
 
 	"github.com/go-logr/logr"
 	"github.com/go-logr/zapr"
+	tinkWorker "github.com/kubefirst/tink/cmd/tink-worker/worker"
+	"github.com/kubefirst/tink/cmd/virtual-worker/worker"
+	"github.com/kubefirst/tink/internal/client"
+	"github.com/kubefirst/tink/internal/proto"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	tinkWorker "github.com/tinkerbell/tink/cmd/tink-worker/worker"
-	"github.com/tinkerbell/tink/cmd/virtual-worker/worker"
-	"github.com/tinkerbell/tink/internal/client"
-	"github.com/tinkerbell/tink/internal/proto"
 	"go.uber.org/zap"
 )
 
@@ -29,7 +29,7 @@ func NewRootCommand(version string) *cobra.Command {
 	if err != nil {
 		panic(err)
 	}
-	logger := zapr.NewLogger(zlog).WithName("github.com/tinkerbell/tink")
+	logger := zapr.NewLogger(zlog).WithName("github.com/kubefirst/tink")
 
 	rootCmd := &cobra.Command{
 		Use:   "virtual-worker",

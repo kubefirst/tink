@@ -1,4 +1,4 @@
-module github.com/tinkerbell/tink
+module github.com/kubefirst/tink
 
 go 1.21
 

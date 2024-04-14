@@ -9,8 +9,8 @@ import (
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/client"
 	"github.com/go-logr/logr"
+	"github.com/kubefirst/tink/internal/proto"
 	"github.com/pkg/errors"
-	"github.com/tinkerbell/tink/internal/proto"
 )
 
 const (

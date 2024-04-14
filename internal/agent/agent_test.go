@@ -9,12 +9,12 @@ import (
 	"github.com/go-logr/logr"
 	"github.com/go-logr/zapr"
 	"github.com/google/go-cmp/cmp"
-	"github.com/tinkerbell/tink/internal/agent"
-	"github.com/tinkerbell/tink/internal/agent/event"
-	"github.com/tinkerbell/tink/internal/agent/failure"
-	"github.com/tinkerbell/tink/internal/agent/runtime"
-	"github.com/tinkerbell/tink/internal/agent/transport"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
+	"github.com/kubefirst/tink/internal/agent"
+	"github.com/kubefirst/tink/internal/agent/event"
+	"github.com/kubefirst/tink/internal/agent/failure"
+	"github.com/kubefirst/tink/internal/agent/runtime"
+	"github.com/kubefirst/tink/internal/agent/transport"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 	"go.uber.org/zap"
 )
 

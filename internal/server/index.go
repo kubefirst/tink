@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/tinkerbell/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/api/v1alpha1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
