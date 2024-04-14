@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
+	"github.com/kubefirst/tink/internal/proto"
 	"github.com/pkg/errors"
-	"github.com/tinkerbell/tink/internal/proto"
 )
 
 const (

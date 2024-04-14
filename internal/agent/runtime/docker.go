@@ -12,10 +12,10 @@ import (
 	"github.com/docker/docker/api/types/mount"
 	"github.com/docker/docker/client"
 	"github.com/go-logr/logr"
-	"github.com/tinkerbell/tink/internal/agent"
-	"github.com/tinkerbell/tink/internal/agent/runtime/internal"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
-	"github.com/tinkerbell/tink/internal/ptr"
+	"github.com/kubefirst/tink/internal/agent"
+	"github.com/kubefirst/tink/internal/agent/runtime/internal"
+	"github.com/kubefirst/tink/internal/agent/workflow"
+	"github.com/kubefirst/tink/internal/ptr"
 	"k8s.io/apimachinery/pkg/util/rand"
 )
 

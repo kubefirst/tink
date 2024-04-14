@@ -7,10 +7,10 @@ import (
 
 	"github.com/go-logr/logr"
 	"github.com/go-logr/zapr"
+	"github.com/kubefirst/tink/internal/deprecated/controller"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	"github.com/tinkerbell/tink/internal/deprecated/controller"
 	"go.uber.org/zap"
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
@@ -56,7 +56,7 @@ func NewRootCommand() *cobra.Command {
 	if err != nil {
 		panic(err)
 	}
-	logger := zapr.NewLogger(zlog).WithName("github.com/tinkerbell/tink")
+	logger := zapr.NewLogger(zlog).WithName("github.com/kubefirst/tink")
 
 	cmd := &cobra.Command{
 		Use: "tink-controller",

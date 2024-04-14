@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/go-logr/zerologr"
+	"github.com/kubefirst/tink/internal/agent/failure"
+	"github.com/kubefirst/tink/internal/agent/runtime"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 	"github.com/rs/zerolog"
-	"github.com/tinkerbell/tink/internal/agent/failure"
-	"github.com/tinkerbell/tink/internal/agent/runtime"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
 	"go.uber.org/multierr"
 
 	"github.com/docker/docker/api/types/filters"

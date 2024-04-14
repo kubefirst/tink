@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/tinkerbell/tink/cmd/tink-worker/cmd"
+	"github.com/kubefirst/tink/cmd/tink-worker/cmd"
 )
 
 // version is set at build time.

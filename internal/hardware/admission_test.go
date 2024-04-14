@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tinkerbell/tink/api/v1alpha2"
-	"github.com/tinkerbell/tink/internal/hardware"
-	"github.com/tinkerbell/tink/internal/hardware/internal"
+	"github.com/kubefirst/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/internal/hardware"
+	"github.com/kubefirst/tink/internal/hardware/internal"
 	admissionv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

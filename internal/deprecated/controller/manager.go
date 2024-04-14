@@ -3,8 +3,8 @@ package controller
 import (
 	"fmt"
 
-	"github.com/tinkerbell/tink/api/v1alpha1"
-	"github.com/tinkerbell/tink/internal/deprecated/workflow"
+	"github.com/kubefirst/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/internal/deprecated/workflow"
 	"k8s.io/apimachinery/pkg/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"

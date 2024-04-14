@@ -11,8 +11,8 @@ import (
 	"github.com/docker/docker/api/types/network"
 	"github.com/docker/docker/client"
 	"github.com/go-logr/zapr"
+	"github.com/kubefirst/tink/internal/proto"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
-	"github.com/tinkerbell/tink/internal/proto"
 	"go.uber.org/zap"
 )
 

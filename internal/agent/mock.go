@@ -7,8 +7,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/tinkerbell/tink/internal/agent/transport"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
+	"github.com/kubefirst/tink/internal/agent/transport"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 )
 
 // Ensure, that TransportMock does implement Transport.

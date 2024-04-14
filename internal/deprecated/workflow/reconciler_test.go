@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tinkerbell/tink/api/v1alpha1"
-	"github.com/tinkerbell/tink/internal/ptr"
-	"github.com/tinkerbell/tink/internal/testtime"
+	"github.com/kubefirst/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/internal/ptr"
+	"github.com/kubefirst/tink/internal/testtime"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"

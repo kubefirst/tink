@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tinkerbell/tink/internal/agent/failure"
-	"github.com/tinkerbell/tink/internal/agent/runtime/internal"
+	"github.com/kubefirst/tink/internal/agent/failure"
+	"github.com/kubefirst/tink/internal/agent/runtime/internal"
 )
 
 func TestFailureFiles(t *testing.T) {

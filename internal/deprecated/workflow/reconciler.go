@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/tinkerbell/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/api/v1alpha1"
 	"k8s.io/apimachinery/pkg/api/equality"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"knative.dev/pkg/ptr"

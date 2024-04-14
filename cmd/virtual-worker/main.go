@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/tinkerbell/tink/cmd/virtual-worker/cmd"
+	"github.com/kubefirst/tink/cmd/virtual-worker/cmd"
 )
 
 // version is set at build time.

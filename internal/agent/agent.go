@@ -6,8 +6,8 @@ import (
 	"sync"
 
 	"github.com/go-logr/logr"
-	"github.com/tinkerbell/tink/internal/agent/event"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
+	"github.com/kubefirst/tink/internal/agent/event"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 )
 
 // Agent is the core data structure for handling workflow execution on target nodes. It leverages

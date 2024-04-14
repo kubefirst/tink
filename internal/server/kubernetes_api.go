@@ -7,9 +7,9 @@ import (
 
 	"github.com/go-logr/logr"
 	"github.com/go-logr/zapr"
-	"github.com/tinkerbell/tink/api/v1alpha1"
-	"github.com/tinkerbell/tink/internal/deprecated/controller"
-	"github.com/tinkerbell/tink/internal/proto"
+	"github.com/kubefirst/tink/api/v1alpha1"
+	"github.com/kubefirst/tink/internal/deprecated/controller"
+	"github.com/kubefirst/tink/internal/proto"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"k8s.io/client-go/rest"

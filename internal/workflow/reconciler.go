@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	tinkv1 "github.com/tinkerbell/tink/api/v1alpha2"
-	"github.com/tinkerbell/tink/internal/workflow/internal"
+	tinkv1 "github.com/kubefirst/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/internal/workflow/internal"
 	"k8s.io/apimachinery/pkg/api/errors"
 	kerrors "k8s.io/apimachinery/pkg/util/errors"
 	ctrl "sigs.k8s.io/controller-runtime"

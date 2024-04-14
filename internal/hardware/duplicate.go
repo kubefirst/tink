@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tinkerbell/tink/api/v1alpha2"
+	"github.com/kubefirst/tink/api/v1alpha2"
 )
 
 type duplicates map[string]*hardwareList

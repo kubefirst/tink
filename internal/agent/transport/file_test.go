@@ -7,10 +7,10 @@ import (
 
 	"github.com/go-logr/zerologr"
 	"github.com/google/go-cmp/cmp"
+	"github.com/kubefirst/tink/internal/agent/event"
+	"github.com/kubefirst/tink/internal/agent/transport"
+	"github.com/kubefirst/tink/internal/agent/workflow"
 	"github.com/rs/zerolog"
-	"github.com/tinkerbell/tink/internal/agent/event"
-	"github.com/tinkerbell/tink/internal/agent/transport"
-	"github.com/tinkerbell/tink/internal/agent/workflow"
 )
 
 func TestFile(t *testing.T) {

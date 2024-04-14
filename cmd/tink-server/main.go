@@ -11,12 +11,12 @@ import (
 	"github.com/equinix-labs/otel-init-go/otelinit"
 	"github.com/go-logr/logr"
 	"github.com/go-logr/zapr"
+	"github.com/kubefirst/tink/internal/grpcserver"
+	"github.com/kubefirst/tink/internal/httpserver"
+	"github.com/kubefirst/tink/internal/server"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	"github.com/tinkerbell/tink/internal/grpcserver"
-	"github.com/tinkerbell/tink/internal/httpserver"
-	"github.com/tinkerbell/tink/internal/server"
 	"go.uber.org/zap"
 )
 
@@ -74,7 +74,7 @@ func NewRootCommand() *cobra.Command {
 	if err != nil {
 		panic(err)
 	}
-	logger := zapr.NewLogger(zlog).WithName("github.com/tinkerbell/tink")
+	logger := zapr.NewLogger(zlog).WithName("github.com/kubefirst/tink")
 
 	cmd := &cobra.Command{
 		Use: "tink-server",
@@ -95,7 +95,7 @@ func NewRootCommand() *cobra.Command {
 
 			logger.Info("Starting version " + version)
 
-			ctx, oshutdown := otelinit.InitOpenTelemetry(cmd.Context(), "github.com/tinkerbell/tink")
+			ctx, oshutdown := otelinit.InitOpenTelemetry(cmd.Context(), "github.com/kubefirst/tink")
 			defer oshutdown(context.Background())
 
 			sigs := make(chan os.Signal, 1)
