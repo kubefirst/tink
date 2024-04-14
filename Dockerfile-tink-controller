@@ -1,0 +1,25 @@
+FROM golang:latest AS builder
+
+ENV GO111MODULE=on \
+  CGO_ENABLED=0 \
+  GOOS=linux \
+  GOARCH=amd64
+
+RUN echo hello1
+
+COPY . .
+RUN go mod download
+
+RUN go build -o /cmd/tink-controller/tink-controller ./cmd/tink-controller
+
+###########################################################################
+# runtime stage
+
+# build final image using nothing but the binary
+FROM alpine:3.19
+
+COPY --from=builder /cmd/tink-controller/tink-controller /usr/bin/tink-controller
+
+RUN apk add --update --upgrade --no-cache ca-certificates
+
+ENTRYPOINT ["/usr/bin/tink-controller"]

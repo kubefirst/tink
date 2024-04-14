@@ -11,12 +11,14 @@ spec:
         - - name: publish-container
             templateRef:
               name: cwft-kaniko
-              template: build-push
+              template: build-push-dockerfile-path
               clusterScope: true
             arguments:
               parameters:
-                - name: appName
+                - name: repoName
                   value: '{{workflow.parameters.appName}}'
+                - name: dockerfilePath
+                  value: 'Dockerfile-tink-server'
                 - name: branch
                   value: '{{workflow.parameters.branch}}'
                 - name: containerRegistryURL
