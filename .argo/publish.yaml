@@ -18,7 +18,7 @@ spec:
                 - name: repoName
                   value: '{{workflow.parameters.appName}}'
                 - name: dockerfilePath
-                  value: 'Dockerfile-tink-server'
+                  value: '{{workflow.parameters.dockerfilePath}}'
                 - name: branch
                   value: '{{workflow.parameters.branch}}'
                 - name: containerRegistryURL
