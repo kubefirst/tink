@@ -5,12 +5,12 @@ ENV GO111MODULE=on \
   GOOS=linux \
   GOARCH=amd64
 
+RUN echo hello1
+
 COPY . .
 RUN go mod download
 
-WORKDIR /cmd/tink-server
-
-RUN go build .
+RUN go build -o /cmd/tink-server/tink-server ./cmd/tink-server
 
 ###########################################################################
 # runtime stage
@@ -21,10 +21,10 @@ RUN go build .
 # # and you probably want `make smee-linux-amd64`
 FROM alpine:3.19
 
-COPY --from=builder /cmd/smee/tink-server /usr/bin/tink-server
+COPY --from=builder /cmd/tink-server/tink-server /usr/bin/tink-server
 
 # Command to run
 EXPOSE 42113 42114
 RUN apk add --update --upgrade --no-cache ca-certificates
 
-ENTRYPOINT ["/usr/bin/tink-server"]
+ENTRYPOINT ["/usr/bin/smee"]
