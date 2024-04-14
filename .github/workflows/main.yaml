@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - kubefirst-ci
 jobs:
   publish:
     runs-on: self-hosted
