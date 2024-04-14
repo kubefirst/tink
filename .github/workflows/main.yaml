@@ -36,7 +36,7 @@ jobs:
           echo "commit sha ${GITHUB_SHA}"
           argo version --short
           argo submit .argo/publish.yaml \
-            --generate-name="${GITHUB_REPOSITORY_NAME_PART}-publish-${GITHUB_SHA_SHORT}-" \
+            --generate-name="tink-server-publish-${GITHUB_SHA_SHORT}-" \
             -p appName="${GITHUB_REPOSITORY_NAME_PART}" \
             -p branch="${GITHUB_REF_NAME}" \
             -p containerRegistryURL="${CONTAINER_REGISTRY_URL}/tink:${GITHUB_SHA_SHORT}" \
@@ -49,7 +49,7 @@ jobs:
           echo "commit sha ${GITHUB_SHA}"
           argo version --short
           argo submit .argo/publish.yaml \
-            --generate-name="${GITHUB_REPOSITORY_NAME_PART}-publish-${GITHUB_SHA_SHORT}-" \
+            --generate-name="tink-controller-publish-${GITHUB_SHA_SHORT}-" \
             -p appName="${GITHUB_REPOSITORY_NAME_PART}" \
             -p branch="${GITHUB_REF_NAME}" \
             -p containerRegistryURL="${CONTAINER_REGISTRY_URL}/tink-controller:${GITHUB_SHA_SHORT}" \
