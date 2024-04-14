@@ -44,7 +44,7 @@ jobs:
             -p shortSha="${GITHUB_SHA_SHORT}" \
             -p dockerfilePath="DockerFile-tink-server"
             --wait --log
-      - name: publish tink image
+      - name: publish tink-controller image
         run: |
           echo "commit sha ${GITHUB_SHA}"
           argo version --short
